@@ -71,10 +71,12 @@ const MyFilterGenerationRow: FC<MyFilterGenerationRowProps> = ({
               onClick={() => handleClick(item.slug)}
             />
             <Label
-              className="cursor-pointer border-1 w-full flex justify-between"
+              className="cursor-pointer border-1 w-full "
               htmlFor={item.name}
             >
-              <span> {item.name}</span> <span>{item.vehicle_count}</span>
+              <div className="flex justify-between w-full pr-4">
+                <span> {item.name}</span> <span>{item.vehicle_count}</span>
+              </div>
             </Label>
           </div>
         ))}

@@ -18,7 +18,7 @@ const Home = () => {
     dispatch(setPageDispatch(current));
   };
   return (
-    <div className="mt-[100px]">
+    <div className="">
       <div className="max-w-[1200px] overflow-hidden">
         <div className="grid grid-cols-6 gap-x-2 gap-y-4 pt-5">
           <div className="col-span-2  relative ">

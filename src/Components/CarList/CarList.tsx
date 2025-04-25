@@ -5,6 +5,7 @@ import { AppDispatch, RootState } from "@/Store/Store";
 import { Button } from "@/UI/ShadcnButton";
 import { Card } from "@/UI/ShadcnCard";
 import { convertNumber, convertNumberKm } from "@/utils/splitNumber";
+import { translateFuel } from "@/utils/translateFuel";
 import { Pagination, PaginationProps } from "antd";
 
 import React, { useEffect, useState } from "react";
@@ -92,7 +93,7 @@ const CarList = () => {
                   <div className="flex justify-evenly">
                     <span>Тип топлива:</span>
 
-                    <span>{item.fuel_type}</span>
+                    <span>{translateFuel(item.fuel_type)}</span>
                   </div>
                   <div>
                     <Button className="cursor-pointer self-stretch w-full">

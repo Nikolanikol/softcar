@@ -72,7 +72,10 @@ const SubCategory: FC<SubCategoryProps> = ({ manufactureSlug }) => {
                   onClick={() => handleClick(item.slug)}
                 >
                   <AccordionTrigger className="cursor-pointer border-2 outline-1 border-b-amber-400-300 rounded-lg p-3">
-                    {item.name}
+                    <div className="flex justify-between w-full">
+                      <span>{item.name}</span>{" "}
+                      <span> {item.vehicle_count}</span>
+                    </div>
                   </AccordionTrigger>
                   <AccordionContent>
                     <MyFilterGenerationRow model_group__slug={item.slug} />
