@@ -71,7 +71,7 @@ const SubCategory: FC<SubCategoryProps> = ({ manufactureSlug }) => {
                   className="border-2 border-b-amber-400-300 rounded-lg "
                   onClick={() => handleClick(item.slug)}
                 >
-                  <AccordionTrigger className="cursor-pointer border-2 outline-1 border-b-amber-400-300 rounded-lg ">
+                  <AccordionTrigger className="cursor-pointer border-2 outline-1 border-b-amber-400-300 rounded-lg p-3">
                     {item.name}
                   </AccordionTrigger>
                   <AccordionContent>

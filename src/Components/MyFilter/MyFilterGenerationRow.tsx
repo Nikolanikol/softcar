@@ -60,10 +60,10 @@ const MyFilterGenerationRow: FC<MyFilterGenerationRowProps> = ({
   useEffect(() => {}, [modelSlugId]);
   if (loading) return <div>Loading...</div>;
   return (
-    <div>
+    <div className="pt-3">
       <RadioGroup>
         {generationData?.map((item) => (
-          <div key={item.code} className="flex items-center space-x-2">
+          <div key={item.code} className="flex items-center space-x-2 pl-5">
             <RadioGroupItem
               className="cursor-pointer"
               value={item.code}

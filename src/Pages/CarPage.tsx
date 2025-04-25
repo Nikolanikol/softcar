@@ -288,7 +288,7 @@ const CarPage = () => {
         {/* Слайдер + инфаормация */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           {/* Галерея изображений */}
-          <section className="  gap-4 mb-6 col-span-2">
+          <section className=" gap-4 mb-6 col-span-2 max-w-[900px] max-h-[550px]  overflow-hidden border-2 flex items-center justify-center">
             <Carousel opts={{ loop: true }}>
               <CarouselContent>
                 {data.photos.map((photo) => (
@@ -296,7 +296,7 @@ const CarPage = () => {
                     <img
                       src={photo.image_url}
                       alt={photo.description || "Car photo"}
-                      className="w-full  object-cover rounded-lg"
+                      className="w-full  object-cover rounded-lg max-w-[900px] max-h-[550px]"
                     />
                   </CarouselItem>
                 ))}
