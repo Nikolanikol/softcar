@@ -272,6 +272,7 @@ const CarPage = () => {
   }, []);
   if (isLoading) return <div>Loading...</div>;
   if (!data) return <div>No data</div>;
+  console.log(data);
   return (
     <div>
       <div className=" mx-auto p-4">
@@ -346,7 +347,7 @@ const CarPage = () => {
         <div className="grid-cols-2 grid gap-4 bg-gray-100 rounded-lg">
           <div>Замены</div>
           <div>
-            {data.diagnosis_data.items.map((item) => {
+            {data.diagnosis_data?.items?.map((item) => {
               if (item.resultCode === "REPLACEMENT") {
                 return (
                   <div key={item.id}>
